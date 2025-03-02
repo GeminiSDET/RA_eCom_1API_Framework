@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.255 s <<< FAILURE! -- in cucumber.Options.TestRunner
+Validating Place API's.Verify if Place is being Successfully added using AddPlaceAPI -- Time elapsed: 0.592 s <<< ERROR!
+java.io.FileNotFoundException: C:\Users\Azar\eclipse-workspace\RACucumberPlaceAPI\src\test\java\resources\global.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at resources.Utils.getGlobalValue(Utils.java:32)
+	at resources.Utils.requestSpecification(Utils.java:23)
+	at stepDefinations.StepDefination.add_place_payload_with(StepDefination.java:35)
+	at ✽.Add Place Payload with "AzHouse" "English" "Bangalore,India"(file:///C:/Users/Azar/eclipse-workspace/e2e_RA_BDD_PlaceAPI/src/test/java/features/placeValidations.feature:4)
+
